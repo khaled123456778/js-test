@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yummy</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+ <body>
+  
+ 
+
+<div class="loader-wrapper d-none">
+  <span class="loader"></span>
+</div>
+
+
+
+   <!-- <nav>
+    <div class="collapse  " id="navbarToggleExternalContent">
+        <div class="bg-dark p-4 position-fixed vh-100 top-0 left-0 ">
+          <h5 class="text-white h4">Collapsed content</h5>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark py-4 ">
+        <div class="container-fluid ">
+            <div class="navHeaad d-flex flex-column justify-content-between  vh-100">
+                <img src="images/logo.png" alt="logo" >
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+           
+            <i class="fas fa-bars text-black fs-5"></i>
+             
+          </button>
+
+          <div class="socialIcon my-4 mx-auto py-4  ">
+            <i class="fa-solid fa-globe d-block m-auto  ps-2 "></i>
+           <div class="nave-nodes ">
+            <i class="fa-solid fa-share-nodes"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+           </div>
+          </div>
+        </div>
+            </div>
+      </nav>
+   </nav> -->
+
+   
+    <nav class="">
+     
+
+     
+      <div class="navBar bg-white   position-fixed top-0  z-3  ">
+        <div class="container-fluid ">
+          <div class="navHeaad d-flex flex-column justify-content-between  vh-100 ">
+              <img src="images/logo.png" alt="logo"  class=" py-4">
+            <i class="fas fa-bars text-black fs-5 ps-3 navBtn" ></i>
+            <i class="fas fa-x text-black fs-5 ps-3 navBtn d-none closeBtn" ></i>
+         
+          
+           
+       
+    
+        <div class="socialIcon  mx-auto py-4  ">
+          <i class="fa-solid fa-globe d-block m-auto  ps-1 "></i>
+         <div class="nav-nodes ">
+          <i class="fa-solid fa-share-nodes m-auto  ps-1"></i>
+
+         </div>
+        </div>
+      </div>
+          </div>
+      </div>
+      
+      <div class="slideList    z-3">
+        <div class="bg-black p-4 position-fixed vh-100 top-0 d-flex justify-content-between flex-column text-white ">
+  <ul class="p-0">
+    <li class="text-white text-decoration-none list-unstyled pt-3 animate__animated animate__bounceInUp" id="searchBtn">Search</li>
+    <li class="text-white text-decoration-none list-unstyled  pt-3 animate__animated animate__bounceInUp" id="catBtn">Categories</li>
+    <li class="text-white text-decoration-none list-unstyled  pt-3 animate__animated animate__bounceInUp" id="areaBtn">Area</li>
+    <li class="text-white text-decoration-none list-unstyled  pt-3 animate__animated animate__bounceInUp" id="ingredBtn" >Ingredients</li>
+    <li class="text-white text-decoration-none list-unstyled  pt-3 animate__animated animate__bounceInUp" id="contactBtn">Contact Us</li>
+  </ul>
+
+  <div class="slideFooter ">
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fa-solid fa-share-nodes"></i>
+    <p class="w-75">Copyright Â© 2019 All Rights
+      Reserved.</p>
+
+  </div>
+        </div>
+      </div>
+     </nav>
+
+
+<div class="searchPage d-none ">
+
+
+  
+  <div class="container">
+    <div class="row py-5 g-4" id="searchInputs">
+      <div class="col-md-6">
+        <input class="form-control bg-transparent text-white" type="text" placeholder="Search By First Name" id="nameInput">
+      </div>
+      <div class="col-md-6">
+        <input class="form-control bg-transparent text-white" type="text" placeholder="Search By First Letter" id="letterInput">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container searchResult">
+  <div class="row g-4" id="resultsRow">
+    
+  </div>
+</div>
+
+
+     <div class="meal d-none">
+  <div class="row g-3">
+    <div class="col-md-3 position-relative overflow-hidden">
+      <div class="layer d-flex align-items-center">
+        <h3 class="ps-3">اسم الوجبة</h3>
+      </div>
+      <img src="images/logo.png" alt="" class=" mealImg">
+
+    </div>
+  </div>
+</div>
+
+
+     <div class="cate d-none">
+  <div class="row g-3" id="categoriesRow">
+    <div class="col-md-3 position-relative overflow-hidden">
+      <div class="layer d-flex align-items-center">
+        <h3 class="ps-3">اسم الوجبة</h3>
+        <p></p>
+      </div>
+      <img src="images/logo.png" alt="" class="img-fluid">
+
+    </div>
+  </div>
+</div>
+
+<div class="area d-none">
+ <div class="container">
+   <div class="row g-3">
+    <div class="col-md-3 position-relative overflow-hidden">
+   <div  class=" m-5 cursor-pointer ">
+                        <i class="fa-solid fa-house-laptop fa-4x text-white text-center " ></i>
+                        <h3 class="text-white fw-bold text-start">American</h3>
+                </div>
+    </div>
+  </div>
+ </div>
+</div>
+
+
+<div class="ingred d-none">
+ <div class="container">
+   <div class="row g-3v" id="ingredientsRow">
+    <div class="col-md-3 position-relative overflow-hidden">
+   <div  class=" m-5 cursor-pointer ">
+                        <i class="fa-solid fa-drumstick-bite fa-4x text-white text-center" ></i>
+                        <h3 class="text-white fw-bold text-start">American</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+    </div>
+  </div>
+ </div>
+</div>
+
+<div class="row py-5 g-4  d-none" id="detailsRow" >
+    <div class="col-md-4">
+                <img class="w-100 rounded-3" src="https://www.themealdb.com/images/media/meals/uuqvwu1504629254.jpg" alt="">
+                    <h2>Braised Beef Chilli</h2>
+            </div>
+            <div class="col-md-8">
+                <h2>Instructions</h2>
+                <p>Preheat the oven to 120C/225F/gas mark 1.
+
+Take the meat out of the fridge to de-chill. Pulse the onions and garlic in a food processor until finely chopped. Heat 2 tbsp olive oil in a large casserole and sear the meat on all sides until golden.
+
+Set to one side and add another small slug of oil to brown the chorizo. Remove and add the onion and garlic, spices, herbs and chillies then cook until soft in the chorizo oil. Season with salt and pepper and add the vinegar, tomatoes, ketchup and sugar.
+
+Put all the meat back into the pot with 400ml water (or red wine if you prefer), bring up to a simmer and cook, covered, in the low oven.
+
+After 2 hours, check the meat and add the beans. Cook for a further hour and just before serving, pull the meat apart with a pair of forks.</p>
+                <h3><span class="fw-bolder">Area : </span>Mexican</h3>
+                <h3><span class="fw-bolder">Category : </span>Beef</h3>
+                <h3>Recipes :</h3>
+                <ul class="list-unstyled d-flex g-3 flex-wrap">
+                    <li class="alert alert-info m-2 p-1">1kg Beef</li><li class="alert alert-info m-2 p-1">3 Onions</li><li class="alert alert-info m-2 p-1">4 cloves Garlic</li><li class="alert alert-info m-2 p-1">Dash Olive oil</li><li class="alert alert-info m-2 p-1">300g Chorizo</li><li class="alert alert-info m-2 p-1">2 tsp Cumin</li><li class="alert alert-info m-2 p-1">2 tsp Allspice</li><li class="alert alert-info m-2 p-1">1 tsp Cloves</li><li class="alert alert-info m-2 p-1">1 large Cinnamon stick</li><li class="alert alert-info m-2 p-1">3 Bay Leaves</li><li class="alert alert-info m-2 p-1">2 tsp dried Oregano</li><li class="alert alert-info m-2 p-1">2 ancho Ancho Chillies</li><li class="alert alert-info m-2 p-1">3 tbsp Balsamic Vinegar</li><li class="alert alert-info m-2 p-1">2 x 400g Plum Tomatoes</li><li class="alert alert-info m-2 p-1">2 tbsp Tomato Ketchup</li><li class="alert alert-info m-2 p-1">2 tbsp Dark Brown Sugar</li><li class="alert alert-info m-2 p-1">2 x 400g tins Borlotti Beans</li>
+                </ul>
+
+                <h3>Tags :</h3>
+                <ul class="list-unstyled d-flex g-3 flex-wrap">
+                    
+                </ul>
+
+                <a target="_blank" href="http://www.telegraph.co.uk/food-and-drink/recipes/braised-beef-chilli-con-carne/" class="btn btn-success">Source</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=z4kSoJgsu6Y" class="btn btn-danger">Youtube</a>
+            </div></div>
+
+           
+     
+ <div class="inputsForm d-none">
+  <div class="container">
+    <div class="row py-5 g-4 " id="rowData">
+      <div class="contact min-vh-100 d-flex justify-content-center align-items-center d-none">
+        <div class="container w-75 text-center">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <input id="nameInput" type="text" class="form-control" placeholder="Enter Your Name">
+              <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Name must contain only letters and spaces (no numbers or special characters)
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input id="emailInput" type="email" class="form-control" placeholder="Enter Your Email">
+              <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Email must be valid (example: name@domain.com)
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input id="phoneInput" type="text" class="form-control" placeholder="Enter Your Phone">
+              <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Phone must be a valid Egyptian number (11 digits starting with 010, 011, 012, or 015)
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input id="ageInput" type="number" class="form-control" placeholder="Enter Your Age">
+              <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Age must be between 12 and 100
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input id="passwordInput" type="password" class="form-control" placeholder="Enter Your Password">
+              <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Password must be at least 8 characters and include at least one letter and one number
+              </div>
+            </div>
+            <div class="col-md-6">
+              <input id="repasswordInput" type="password" class="form-control" placeholder="Repassword">
+              <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Repassword must match the original password
+              </div>
+            </div>
+          </div>
+          <button id="submitBtn" disabled="" class="btn btn-outline-danger px-2 mt-3">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+   
+
+
+            
+
+  
+   
+
+  
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/search.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
